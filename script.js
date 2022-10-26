@@ -26,8 +26,11 @@ const quotesGenerator = async () => {
         let randomNum = Math.floor(Math.random() * quotesArr.length);
         if(quotesArr[randomNum].text.length >= 80) quoteText.style.fontSize = "33px";
         quoteText.textContent = quotesArr[randomNum].text;
-        if(!quotesArr[randomNum].author) author.textContent = "Anonymous";
-        author.textContent = quotesArr[randomNum].author;
+        if(!quotesArr[randomNum].author) {
+            author.textContent = "Anonymous"
+        }else{
+            author.textContent = quotesArr[randomNum].author;
+        }
     }, 2000);
     } catch (error) {
         console.log(error)

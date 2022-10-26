@@ -74,7 +74,7 @@ body {
     left: 50px;
     top: 50%;
     transform: translateY(-50%);
-    background: #fff;
+    background: rgba(183, 134, 178, 0.758);
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -124,9 +124,10 @@ body {
 }
 
 .author {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     font-style: italic;
+    text-transform: uppercase;
     margin-top: 30px;
     font-weight: 300;
 }
@@ -163,9 +164,5 @@ body {
     
     .author {
         font-size: 20px;
-        text-align: center;
-        font-style: italic;
-        margin-top: 30px;
-        font-weight: 300;
     }
 }
